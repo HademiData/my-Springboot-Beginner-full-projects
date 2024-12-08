@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: User
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: TaskDB
+    volumes:
+      - /postgres:/data/postgres
+    ports:
+      - "5433:5432"
+
